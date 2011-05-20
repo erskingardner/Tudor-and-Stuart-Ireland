@@ -58,14 +58,14 @@ html { overflow-y: scroll; }
 
 a:hover, a:active { outline: none; }
 a, a:active, a:visited { 
-  color: #2A66A3;
-  text-decoration: none;
-     -moz-transition: all 0.5s ease-out;  
-       -o-transition: all 0.5s ease-out;  
-  -webkit-transition: all 0.5s ease-out;  
-          transition: all 0.5s ease-out;
+  color: #333;
+  text-decoration: underline;
+     -moz-transition: all 0.3s ease-out;  
+       -o-transition: all 0.3s ease-out;  
+  -webkit-transition: all 0.3s ease-out;  
+          transition: all 0.3s ease-out;
 }
-a:hover { color: #036; text-decoration: underline; }
+a:hover { color: #C03234; text-decoration: underline; }
 
 ul, ol { margin-left: 1.8em; }
 ol { list-style-type: decimal; }

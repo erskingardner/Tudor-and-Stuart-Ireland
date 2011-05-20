@@ -105,15 +105,15 @@ a:hover, a:active {
   outline: none; }
 
 a, a:active, a:visited {
-  color: #2A66A3;
-  text-decoration: none;
-  -moz-transition: all 0.5s ease-out;
-  -o-transition: all 0.5s ease-out;
-  -webkit-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out; }
+  color: #333;
+  text-decoration: underline;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out; }
 
 a:hover {
-  color: #036;
+  color: #C03234;
   text-decoration: underline; }
 
 ul, ol {
@@ -308,12 +308,23 @@ p {
 .block {
   display: block; }
 
+.left-flourish, .right-flourish {
+  background: url("../images/flourish.gif") no-repeat;
+  width: 102px;
+  display: inline-block;
+  height: 42px; }
+
+.right-flourish {
+  background-position: -102px 0px; }
+
 html {
   background-color: #fff; }
 
 body {
   background: #fff;
-  min-height: 600px; }
+  min-height: 600px;
+  width: 900px;
+  margin: 0 auto; }
 
 .float-left {
   display: inline;
@@ -339,13 +350,20 @@ header {
 header h1#logo {
   text-align: center;
   letter-spacing: -0.07em;
-  margin: 0em;
+  margin: 0em auto;
+  width: 710px;
   padding: 0em;
   font-size: 3.4231em; }
 
 header h1#logo a {
   text-align: center;
+  background: url(../images/logo.jpg) no-repeat;
   font-weight: bold;
+  width: 710px;
+  height: 217px;
+  display: block;
+  text-indent: -9999em;
+  margin: 0 auto;
   color: #444;
   text-decoration: none;
   text-shadow: 5px 5px 0px #fff; }
@@ -356,10 +374,19 @@ header h1#logo a:hover {
 header nav {
   text-align: center;
   margin: 0.4em auto 1em;
-  font-size: 1em; }
+  font-size: 1.4em;
+  height: 42px;
+  line-height: 42px; }
 
 header nav a, header nav a:active, header nav a:link, header nav a:visited {
+  font-family: "Crimson Text", georgia, times, serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  position: relative;
+  top: -10px;
+  color: #333;
   text-decoration: none;
+  display: inline-block;
   padding: .2em .3em;
   margin: 0 0.2em;
   text-shadow: 2px 2px 0px #fff;
@@ -370,11 +397,13 @@ header nav a, header nav a:active, header nav a:link, header nav a:visited {
   transition: color 0.5s ease-out; }
 
 header nav a:hover, body#about header nav a#about-nav, body#photos header nav a#photos-nav, body#web header nav a#web-nav, body#contact header nav a#contact-nav, body#archive header nav a#archive-nav {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #C03234; }
 
 #main {
   font-family: "Crimson Text", georgia, times, serif;
-  font-weight: normal; }
+  font-weight: normal;
+  font-size: 1.1em; }
 
 #main h1, #main h2 {
   font-family: "Crimson Text", georgia, times, serif;
@@ -488,91 +517,6 @@ iframe, object {
   width: 30%;
   text-align: right; }
 
-#main h1.archive-page-title {
-  text-align: left;
-  text-shadow: 1px 1px 0px #fff;
-  padding-bottom: 0; }
-
-#main h2.archive-year {
-  border-bottom: 2px solid #ccc;
-  color: #666;
-  padding-bottom: 0;
-  text-align: left; }
-
-#main h3.archive-month {
-  color: #888;
-  text-align: left; }
-
-#main ul.archive-page {
-  list-style-type: none;
-  padding: 0;
-  margin: 0 0 0 0.5em; }
-
-.flourish {
-  font-size: 0.8em;
-  color: #777;
-  position: relative;
-  top: -1px; }
-
-.gallery-item {
-  width: 48%;
-  height: auto;
-  display: inline;
-  float: left;
-  margin-bottom: 1.5em;
-  text-align: center;
-  position: relative; }
-
-.gallery-item.right {
-  float: right; }
-
-.gallery-item a {
-  text-decoration: none; }
-
-.gallery-item a img {
-  max-width: 100%;
-  height: auto;
-  border: 1px solid #555;
-  -webkit-box-shadow: 0px 0px 6px #555;
-  -moz-box-shadow: 0px 0px 6px #555;
-  box-shadow: 0px 0px 6px #555; }
-
-.gallery-item a .gallery-title {
-  font-size: 2.6154em;
-  display: block;
-  z-index: 1;
-  background-color: rgba(0, 0, 0, 0.6);
-  width: 100.5%;
-  color: #fff;
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 0.2em 0;
-  font-weight: normal;
-  font-family: "Cabin Sketch", helvetica, arial, sans-serif; }
-
-.gallery-item a:hover .gallery-title {
-  display: block; }
-
-#recent-photos img {
-  max-width: 100%;
-  max-height: 100%; }
-
-#main ul.posts {
-  list-style-type: none;
-  padding: 0;
-  margin: 1em 0 0 0em;
-  text-align: center; }
-
-.related-date {
-  color: #777;
-  display: inline-block; }
-
-#jeff-face {
-  width: 30%;
-  max-width: 400px;
-  height: auto; }
-
 footer {
   text-align: center;
   font-family: "Crimson Text", georgia, times, serif;
@@ -581,55 +525,22 @@ footer {
   color: #888;
   margin: 6em 0 2em; }
 
-#socials {
-  text-align: center;
-  height: 32px;
-  margin-bottom: 1em; }
-
-#socials .icon {
-  width: 32px;
-  height: 32px;
-  display: inline-block;
-  margin: 0px 5px;
-  text-indent: -9999px;
-  text-decoration: none;
-  background: url("../images/socials.png") no-repeat;
-  overflow: hidden; }
-
-#socials .icon:hover {
-  -moz-transform: rotate(4deg);
-  -webkit-transform: rotate(4deg);
-  overflow: hidden; }
-
-#socials .email-icon {
-  background-position: 0px 0px; }
-
-#socials .rss-icon {
-  background-position: 0px -160px; }
-
-#socials .facebook-icon {
-  background-position: 0px -64px; }
-
-#socials .flickr-icon {
-  background-position: 0px -32px; }
-
-#socials .twitter-icon {
-  background-position: 0px -96px; }
-
-#socials .vimeo-icon {
-  background-position: 0px -128px; }
-
-#caveats {
-  width: 50%;
+footer #footer-img {
+  background: url("../images/footer.jpg") no-repeat;
+  width: 824px;
+  height: 85px;
+  display: block;
   margin: 1em auto;
-  padding: 10px;
-  text-align: left;
-  border: 1px dotted #3261b9;
-  background-color: rgba(50, 97, 185, 0.1); }
+  text-align: center;
+  position: relative; }
 
-#caveats p {
-  font-size: 1em;
-  color: #555; }
+footer #footer-img a {
+  width: 300px;
+  height: 40px;
+  position: absolute;
+  right: 25px;
+  top: 20px;
+  display: block; }
 
 #error-code {
   color: #7A0000;
@@ -642,66 +553,7 @@ footer {
   text-align: center;
   font-size: 1.5em; }
 
-@media screen and (max-device-width: 480px) {
-  html {
-    -webkit-text-size-adjust: none;
-    -ms-text-size-adjust: none; } }
-@media screen and (max-width: 619px) {
-  header h1#logo a, header nav a, .gallery-item a .gallery-title {
-    font-size: 100%; }
-
-  .gallery-item, .gallery-item.right {
-    display: block;
-    float: none;
-    margin: 0 auto 2em;
-    width: 100%; } }
-@media screen and (min-width: 620px) and (max-width: 50em) {
-  header h1#logo a, header nav a, .gallery-item a .gallery-title {
-    font-size: 120%; } }
-@media screen and (min-width: 50em) and (max-width: 80em) {
-  header h1#logo a, header nav a, .gallery-item a .gallery-title {
-    font-size: 140%; } }
-@media screen and (min-width: 80em) {
-  header h1#logo a, header nav a, .gallery-item a .gallery-title {
-    font-size: 160%; } }
-@media print {
-  * {
-    background: transparent !important;
-    color: #444 !important;
-    text-shadow: none !important; }
-
-  a, a:visited {
-    color: #444 !important;
-    text-decoration: underline; }
-
-  a:after {
-    content: " (" attr(href) ")"; }
-
-  abbr:after {
-    content: " (" attr(title) ")"; }
-
-  .ir a:after {
-    content: ""; }
-
-  pre, blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid; }
-
-  thead {
-    display: table-header-group; }
-
-  tr, img {
-    page-break-inside: avoid; }
-
-  @page {
-    margin: 0.5cm; }
-
-  p, h2, h3 {
-    orphans: 3;
-    widows: 3; }
-
-  h2, h3 {
-    page-break-after: avoid; } }
+/*@import "responsiveness";*/
 /*
  * FancyBox - jQuery Plugin
  * Simple and fancy lightbox alternative

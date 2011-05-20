@@ -68,3 +68,14 @@ p {
 .block {
   display: block;
 }
+
+.left-flourish, .right-flourish {
+  background: url('../images/flourish.gif') no-repeat;
+  width: 102px;
+  display: inline-block;
+  height: 42px;
+}
+
+.right-flourish {
+  background-position: -102px 0px;
+}
