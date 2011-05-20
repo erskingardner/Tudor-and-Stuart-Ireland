@@ -25,6 +25,6 @@ def push_to_github
   sh "git commit -a -m 'site generation'"
   puts "-----> Done"
   puts "-----> Pushing generated site to Github"
-  sh "git push origin master"
+  sh "git push origin"
   puts "-----> Done"
 end
