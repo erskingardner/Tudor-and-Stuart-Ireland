@@ -1,0 +1,28 @@
+html {
+  background-color: #ddd;
+}
+
+body {
+  background: #ddd url('../images/bg-grad.png') repeat-x;
+  min-height: 600px;
+}
+
+.float-left {
+  display: inline;
+  float: left;
+  margin: 0.3em 1em 0.3em 0;
+}
+
+.float-right {
+  display: inline;
+  float: right;
+  margin: 0.3em 0 0.3em 1em;
+}
+
+.embed-wrapper {
+  display: inline;
+  float: left;
+  margin: 0 1.8em 1em 0;
+  position: relative;
+  top: 0.3em;
+}

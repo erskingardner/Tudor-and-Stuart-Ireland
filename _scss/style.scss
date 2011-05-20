@@ -1,0 +1,385 @@
+@import "reset";
+@import "typography";
+@import "layout";
+
+//
+// Header
+//
+
+header {
+  margin: 0 0 3em;
+  font-family: "Cabin Sketch", Helvetica, Arial, sans-serif;
+}
+
+header h1#logo {
+  text-align: center;
+  font-weight: normal;
+  margin: 0em;
+  padding: 0em;
+  font-size: 3.4231em;
+}
+
+header h1#logo a {
+  text-align: center;
+  color: #444;
+  text-decoration: none;
+  text-shadow: 5px 5px 0px #fff;
+}
+
+header h1#logo a:hover {
+  color: #1a1a1a;
+}
+
+header nav {
+  text-align: center;
+  margin: 0.4em auto 1em;
+  font-size: 1em;
+}
+
+header nav a, header nav a:active, header nav a:link, header nav a:visited {
+  text-decoration: none;
+  padding: .2em .3em;
+  margin: 0 0.2em;
+  text-shadow: 2px 2px 0px #fff;
+  font-weight: normal;
+     -moz-transition: color 0.5s ease-out;  
+       -o-transition: color 0.5s ease-out;  
+  -webkit-transition: color 0.5s ease-out;  
+          transition: color 0.5s ease-out;
+}
+
+header nav a:hover, body#about header nav a#about-nav, body#photos header nav a#photos-nav, body#web header nav a#web-nav, body#contact header nav a#contact-nav, body#archive header nav a#archive-nav {
+  text-decoration: none;
+  border-top: 4px solid;
+}
+
+
+//
+// Main Content
+//
+
+#main {
+  font-family: "Crimson Text", georgia, times, serif;
+  font-weight: normal;
+}
+
+#main h1, #main h2 {
+  font-family: "Crimson Text", georgia, times, serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+#main h2.post-title {
+  padding-top: 0.5em;
+}
+
+#main p {
+  margin: 0 0 1em;
+}
+
+#main ul, #main ol {
+  list-style-position: outside;
+  margin: 0 0 1.5em 2em;
+}
+
+#main li {
+  margin: 0 0 0.5em;
+}
+
+.go-to-archive {
+  text-align: center;
+}
+
+#main blockquote {
+  margin: 1em 0em 0.5em;
+  padding: 1em;
+  background-color: #d4d4d4;
+  border: 1px solid #aaa;
+  -webkit-box-shadow:  0px 0px 5px #aaa;
+  -moz-box-shadow:  0px 0px 5px #aaa;
+  box-shadow:  0px 0px 5px #aaa;
+}
+
+#main cite {
+  margin: 0 0 1em;
+  text-align: right;
+  display: block;
+}
+
+#main .footnotes {
+  color: #666;
+  line-height: 1.2em;
+  margin: 0 auto 2em;
+  width: 70%;
+  font-size: 0.9em;
+}
+
+#main a.back-to-reading {
+  font-weight: bold;
+}
+
+#main a.back-to-reading:hover {
+  text-decoration: none;
+}
+
+iframe, object {
+  width: 100%;
+}
+
+#main .post-content img, #main #post img {
+  border: 7px solid #fff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow:  0px 0px 5px #555;
+  -moz-box-shadow:  0px 0px 5px #555;
+  box-shadow:  0px 0px 5px #555;
+  max-width: 100%;
+}
+
+
+//
+// Posts
+//
+
+.post {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 1em;
+  margin: 0 0 2em 0;
+}
+.post-title a {
+  text-decoration: none;
+}
+
+#main p.post-title {
+  margin: 0;
+}
+
+#main p.post-date {
+  color: #777;
+  font-size: 0.9em;
+  margin: 0;
+  text-align: center;
+}
+
+#main h2 {
+  text-shadow: 1px 1px 0px #fff;
+}
+
+#main h3 {
+  color: #444;
+  text-align: center;
+  text-shadow: 1px 1px 0px #fff;
+}
+
+#main h4 {
+  margin: 2em 0 0 0;
+  color: #666;
+  text-align: center;
+}
+
+#main .post-content p, #main #post p {
+  text-align: justify;
+}
+
+.youtube-player, .vimeo-player {
+  max-width: 100%;
+}
+
+.tags {
+  color: #999;
+  font-style: italic;
+  display: inline;
+  float: left;
+  width: 70%;
+}
+
+.date {
+  color: #999;
+  font-style: italic;
+  display: inline;
+  float: right;
+  width: 30%;
+  text-align: right;
+}
+
+
+//
+// Archive
+//
+
+#main h1.archive-page-title {
+  text-align: left;
+  text-shadow: 1px 1px 0px #fff;
+  padding-bottom: 0;
+}
+
+#main h2.archive-year {
+  border-bottom: 2px solid #ccc;
+  color: #666;
+  padding-bottom: 0;
+  text-align: left;
+}
+
+#main h3.archive-month {
+  color: #888;
+  text-align: left;
+}
+
+#main ul.archive-page {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 0 0.5em;
+}
+
+.flourish {
+  font-size: 0.8em;
+  color: #777;
+  position: relative;
+  top: -1px;
+}
+
+
+//
+// Galleries
+//
+
+.gallery-item {
+  width: 48%;
+  height: auto;
+  display: inline;
+  float: left;
+  margin-bottom: 1.5em;
+  text-align: center;
+  position: relative;
+}
+
+.gallery-item.right {
+  float: right;
+}
+
+.gallery-item a {
+  text-decoration: none;
+}
+
+.gallery-item a img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #555;
+  -webkit-box-shadow:  0px 0px 6px #555;
+  -moz-box-shadow:  0px 0px 6px #555;
+  box-shadow:  0px 0px 6px #555;
+}
+
+.gallery-item a .gallery-title {
+  font-size: 2.6154em;
+  display: block;
+  z-index: 1;
+  background-color: rgba(0,0,0,0.6);
+  width: 100.5%;
+  color: #fff;  
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0.2em 0;
+  font-weight: normal;
+  font-family: "Cabin Sketch", helvetica, arial, sans-serif;
+}
+
+.gallery-item a:hover .gallery-title {
+  display: block;
+}
+
+#recent-photos img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+//
+// Related
+//
+
+#main ul.posts {
+  list-style-type: none;
+  padding: 0;
+  margin: 1em 0 0 0em;
+  text-align: center;
+}
+
+.related-date {
+  color: #777;
+  display: inline-block;
+}
+
+
+//
+// About
+//
+
+#jeff-face {
+  width: 30%;
+  max-width: 400px;
+  height: auto;
+}
+
+
+//
+// Footer
+//
+
+footer {
+  text-align: center;
+  font-family: "Crimson Text", georgia, times, serif;
+  font-weight: normal;
+  font-size: 1em;
+  color: #888;
+  margin: 6em 0 2em;
+}
+
+#socials {
+  text-align: center;
+  height: 32px;
+  margin-bottom: 1em;
+}
+
+#socials .icon {
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  margin: 0px 5px;
+  text-indent: -9999px;
+  text-decoration: none;
+  background: url('../images/socials.png') no-repeat;
+  overflow: hidden;
+}
+
+#socials .icon:hover {
+  -moz-transform:rotate(4deg);
+  -webkit-transform:rotate(4deg);
+  overflow: hidden;
+}
+#socials .email-icon { background-position: 0px 0px;  }
+#socials .rss-icon { background-position: 0px -160px; }
+#socials .facebook-icon { background-position: 0px -64px; }
+#socials .flickr-icon { background-position: 0px -32px; }
+#socials .twitter-icon { background-position: 0px -96px; }
+#socials .vimeo-icon { background-position: 0px -128px; }
+
+#caveats {	
+	width: 50%;
+	margin: 1em auto;
+	padding: 10px;
+	text-align: left;
+	border: 1px dotted #3261b9;
+	background-color: rgba(50, 97, 185,0.1);
+}
+
+#caveats p {
+	font-size: 1em;
+	color: #555;
+}
+
+@import "errors";
+@import "responsiveness";
+@import "fancybox";

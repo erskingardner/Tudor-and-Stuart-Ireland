@@ -1,0 +1,61 @@
+body { font-size:100%; line-height:1.33333; }
+h1, h2, h3 { margin-top:0; margin-bottom:0; }
+h1 { font-size:2.11538em; padding:1.53911em 0; }
+h2 { font-size:1.61538em; padding:1.39659em 0; }
+h3 { font-size:1.30769em; padding:1.37228em 0; }
+
+p {
+  font-size: 1em;
+  margin: 0 0 1em 0;
+}
+
+#container {
+  width: 100%;
+  margin: 0 auto;
+  min-width: 320px;
+}
+
+#main {
+  width: 80%;
+  max-width: 55em;
+  margin: 0 auto;
+}
+
+.underlined {
+  text-decoration: underline;
+}
+
+#main p.no-indent {
+  text-indent: 0em;
+}
+
+.amp {
+  font-family: "Baskerville", "Palatino", "Palatino Linotype", "Constantia", "Book Antiqua", sans-serif;
+  font-style: italic;
+  font-variant: normal;
+  font-weight: normal;
+  font-size: 1.1em;
+}
+
+.copyright {
+  font-family: georgia, times, serif;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.super {
+  font-size: 0.75em;
+  vertical-align: top;
+  position: relative;
+  top: -3px;
+}
+
+.super a {
+  padding: 0.2em;
+  position: relative;
+  top: -5px;
+}
+
+.super a:hover {
+  text-decoration: none;
+}

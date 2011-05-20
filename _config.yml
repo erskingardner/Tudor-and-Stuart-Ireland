@@ -1,0 +1,42 @@
+# auto: true
+# lsi: false
+# base_url: http://localhost:4000
+
+auto: false
+lsi: true
+base_url: http://tudorstuartireland.com
+
+# Auto reloading (turn off for production)
+# ========================================
+#auto: false
+
+# Formatting options
+# ==================
+pygments: true
+markdown: rdiscount
+rdiscount:
+  extensions: [smart]
+  
+# LSI for related posts
+# =====================
+#lsi: true
+
+# Multiviews
+# ==========
+# Doesn't work on MT, fuckers.
+#multiviews: true
+# So we'll fake it
+permalink: pretty
+
+# Base site variables
+# ===================
+#base_url: http://localhost:4000
+#base_url: http://dev.jeffgardner.org/new
+#base_url: "http://jeffgardner.org"
+
+discription: "The Tudor Stuart Ireland Conference"
+
+
+# Things to exclude
+# =================
+exclude: ['README.markdown', 'Rakefile']
